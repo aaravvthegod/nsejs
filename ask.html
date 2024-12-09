@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ask a Question</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Ask a Question</h1>
+  </header>
+
+  <main>
+    <section class="ask-question-form">
+      <h2>Have a question? Ask it here!</h2>
+      <form id="question-form">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="question">Your Question:</label><br>
+        <textarea id="question" name="question" required></textarea><br><br>
+
+        <button type="submit">Submit Question</button>
+      </form>
+    </section>
+
+    <footer>
+      <img onclick="playSound(); window.history.back()" src="assets/back.png" width="100" height="100" class="hover-image">
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("question-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      alert("Your question has been submitted!");
+    });
+  </script>
+</body>
+</html>

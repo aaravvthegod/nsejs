@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Quiz</h1>
+  </header>
+
+  <main>
+    <section class="quiz-question">
+      <h2>Question 1:</h2>
+      <p>What is the atomic number of Hydrogen?</p>
+      <form>
+        <input type="radio" id="option1" name="question1" value="1">
+        <label for="option1">1</label><br>
+        <input type="radio" id="option2" name="question1" value="2">
+        <label for="option2">2</label><br>
+        <input type="radio" id="option3" name="question1" value="3">
+        <label for="option3">3</label><br>
+      </form>
+    </section>
+
+    <section class="quiz-question">
+      <h2>Question 2:</h2>
+      <p>What is the chemical formula for water?</p>
+      <form>
+        <input type="radio" id="option1" name="question2" value="H2O">
+        <label for="option1">H<sub>2</sub>O</label><br>
+        <input type="radio" id="option2" name="question2" value="CO2">
+        <label for="option2">CO<sub>2</sub></label><br>
+        <input type="radio" id="option3" name="question2" value="O2">
+        <label for="option3">O<sub>2</sub></label><br>
+      </form>
+    </section>
+
+    <section class="quiz-question">
+      <h2>Question 3:</h2>
+      <p>Which of the following is a renewable energy source?</p>
+      <form>
+        <input type="radio" id="option1" name="question3" value="Coal">
+        <label for="option1">Coal</label><br>
+        <input type="radio" id="option2" name="question3" value="Solar">
+        <label for="option2">Solar</label><br>
+        <input type="radio" id="option3" name="question3" value="Natural Gas">
+        <label for="option3">Natural Gas</label><br>
+      </form>
+    </section>
+
+    <footer>
+    <img onclick="playSound(); window.history.back()" src="assets/back.png" width="100" height="100" class="hover-image">
+      <button onclick="submitQuiz();">Submit Quiz</button>
+    </footer>
+  </main>
+
+  <script>
+    function submitQuiz() {
+      alert("Quiz submitted! Your answers have been recorded.");
+    }
+  </script>
+</body>
+</html>
